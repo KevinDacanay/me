@@ -1,151 +1,221 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>About Me</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Dacanay&rsquo;s Introduction Website</title>
+    <link rel="icon" href="/assets/01-me-300-by-300.jpg">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #f5f5f5;
             line-height: 1.6;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        .main-info {
-            background: #333;
-            color: #fff;
-            padding: 20px;
-            margin-bottom: 10px;
-        }
-        .main-info h1 {
+            color: #333;
+            padding: 0;
             margin: 0;
         }
-        .contacts {
-            background: #333;
-            color: #fff;
-            padding: 20px 10px 20px 20px;
-            font-size: 12px;
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(to right, #3b82f6, #6d28d9);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            position: relative;
+            max-width: 100%;
+            left: 0;
+            top: 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3em;
             margin-bottom: 10px;
         }
-        .contacts p {
+
+        header h1 a {
+            color: inherit;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        header h2 {
+            font-size: 1.5em;
+            font-weight: 300;
+        }
+
+        .profile-img {
+            display: block;
+            max-width: 800px;
+            width: 100%;
+            height: auto;
+            margin: 20px auto;
+        }
+
+        section {
+            background-color: white;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        section p, section ul {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #6d28d9;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #3b82f6;
+        }
+
+        .contacts h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style: square;
             padding-left: 20px;
         }
-        .contacts div {
-            padding: 0px;
-        }
-        .introduction, .hobbies, .lewis, .course, .job, .fun-fact {
-            background: #e7e7e7;
+
+        .last-updated {
+            text-align: center;
+            font-size: 1em;
             padding: 15px;
-            margin-bottom: 10px;
+            background-color: #333;
+            color: white;
+            border-radius: 10px;
+            margin-top: 30px;
         }
-        .lewis ul {
-            font-size: small;
-            font-style: normal;
-            list-style: square;
-        }
+
     </style>
 </head>
 <body>
+
+    <header>
+        <h1><a href="https://KevinDacanay.github.io">Kevin Dacanay&rsquo;s</a>     Introduction Website</h1>
+        <h2>Preferred Name: Kevin</h2>
+    </header>
     <div class="container">
-        <header class="main-info">
-            <h1>Kevin Dacanay's Introduction Website</h1>
-            <h2>Preferred Name: Kevin</h2>
-        </header>
-        <header class="contacts">
+
+        <img src="/assets/01-me-800-by-800.jpg" alt="Kevin Dacanay" class="profile-img">
+
+        <section class="contacts">
+            <h2>Contact Information</h2>
             <div>
                 <h3>Lewis Email:</h3>
-                <p>kevinbrianfdacanay@lewisu.edu</p>
+                <p><a href="mailto:kevinbrianfdacanay@lewisu.edu">kevinbrianfdacanay@lewisu.edu</a></p>
             </div>
             <div>
-                <h3>Discord:</h3> 
-                <p>kevykevkev</p>
+                <h3>Discord Username:</h3>
+                <p>kev__27</p>
             </div>
-        </header>  
+        </section>
 
         <section class="lewis">
-			<h2>Year at Lewis: <strong>Senior</strong></h2>
-			<h2>
-                Lewis major/minor/concentrations:
-                <p>
-                    <ul>
-                        <li>Computer Science major </li> 
-                        <li>Cybersecurity minor </li>    
-                        <li>Concentrating in Artificial Intelligence </li> 
-                    </ul>   
-                </p>
-            </h2>
-			<h2>    
-                Reasons for pursuing this degree:
-            </h2>
-                <p>
-                    I am pursuing my Computer Science degree since 
-                    I enjoy creating fun as well as practical things just by using a computer
-                </p> 
+            <h2>Year at Lewis: <strong>Senior</strong></h2>
+            <h2>Major / Minor / Concentrations:</h2>
+            <ul>
+                <li>Computer Science major</li>
+                <li>Cybersecurity minor</li>
+                <li>Concentrating in Artificial Intelligence</li>
+            </ul>
+            <h2>Reasons for Pursuing this Degree:</h2>
+            <p>
+                I chose to pursue a degree in Computer Science because I enjoy building and creating things using
+                technology. I find it rewarding to solve problems using logic and creativity, and I like seeing
+                my ideas come to life through code. The field of computer science also offers many opportunities
+                for continuous learning and growth, which motivates me to keep improving my skills.
+            </p>
         </section>
-        
-		<section class="introduction">
+
+        <section class="introduction">
             <h2>Introduction</h2>
             <p>
-                I am taking this Software Engineering course to expand my knowledge in the field. 
-                I hope to learn more about system designs, building scalable and reliable systems, 
-                as well as knowing how the process is of creating software as part of a team
+                My name is Kevin Dacanay, and I&rsquo;m currently a senior at Lewis University majoring in 
+                Computer Science, with a minor in Cybersecurity and a concentration in Artificial Intelligence. 
+                I come from a supportive family that has always encouraged me to follow my interests in technology 
+                and problem-solving. I have always been interested in how computers work, 
+                especially how software can be used to build useful and creative solutions. 
+                As a student, I enjoy learning both the concepts behind technology and the hands-on skills 
+                that help prepare me for a future career in the tech field.
             </p>
         </section>
 
-		<section class="course">
-            <!-- <h2>Reasons for Taking This Course</h2> -->
+        <section class="course">
             <h2>What I Hope to Learn in this Course</h2>
-            <p>
-                I am taking this Software Engineering course to expand my knowledge in the field. 
-                I hope to learn more about system designs, building scalable and reliable systems, 
-                as well as knowing how the process is of creating software as part of a team.
-            </p>
+            <ul>
+                <li>How to design well-structured and maintainable software</li>
+                <li>Best practices for building scalable and reliable applications.</li>
+                <li>How to work effectively as part of a software development scrum team.</li>
+                <li>Understanding the real-world software engineering processes and workflows.</li>
+                <li>Improving my problem-solving and debugging skills.</li>
+            </ul>
         </section>
 
-		<section class="job">
-            <h2>Current/Recent Job</h2>
-			<p>Cook - Beggars Pizza Restaurant</p>
-        </section>		
+        <section class="job">
+            <h2>Current / Recent Job</h2>
+            <p>Cook - Beggars Pizza Restaurant</p>
+        </section>
 
         <section class="hobbies">
-            <h2>My Favorite Hobbies/Activities</h2>
-            <p>
-                <ul>
-                    <li>
-                        I like to code on my free time and work on 
-                    <a href="https://github.com/KevinDacanay">personal projects</a>. </li>
-                    <li>
-                        I also enjoy going out with friends and family. 
-                    </li>
-                    <li>
-                        Playing video games
-                        on my PC such as <a href="https://www.valorant.com">Valorant</a>, </li>
-                    </li>
-                    <li>
-                        I like going to the <a href="https://www.planetfitness.com/">gym</a> 
-                        for a quick workout.
-                    </li>
-
-                </ul>
-                
-                
-            </p>
+            <h2>My Favorite Hobbies / Activities</h2>
+            <ul>
+                <li>
+                    I like to code on my free time and work on 
+                    <a href="https://github.com/KevinDacanay" target="_blank">personal projects</a>.
+                </li>
+                <li>
+                    I also enjoy going out with friends and family.
+                </li>
+                <li>
+                    Playing video games on my PC such as <a href="https://www.playvalorant.com" target="_blank">Valorant</a> 
+                    and <a href="https://www.leagueoflegends.com">League of Legends</a>.
+                </li>
+                <li>
+                    I like going to the <a href="https://www.planetfitness.com/" target="_blank">gym</a> for a quick workout.
+                </li>
+            </ul>
         </section>
 
         <section class="fun-fact">
             <h2>Fun Fact</h2>
-            <p>
-                <ul>
-                    <li>I can solve a Rubiks Cube.</li>
-                    <li>I have memorized entire scripts for some 
-                        of my favorite movies and I can recite them 
-                        while the movie is playing on mute.
-                    </li>
-                </ul>
-            </p>
+            <ul>
+                <li>I can solve a Rubik&rsquo;s Cube.</li>
+                <li>I have memorized entire scripts for some of my favorite movies and I can recite them while the movie is playing on mute.</li>
+            </ul>
         </section>
+
+        <div class="last-updated">
+            <p>Last Updated on 31/01/2026</p>
+        </div>
     </div>
+
 </body>
 </html>
